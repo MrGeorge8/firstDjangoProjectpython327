@@ -1,0 +1,31 @@
+{% extends 'generator/base.html' %}
+
+{% block content %}
+    <script>
+        $(document).ready(function() {
+            $("h1").css("transform", "translateY(0)");
+            $(".count").css("transform", "translateY(0)");
+            $(".check_c").css("transform", "translateY(0)");
+        });
+    </script>
+    <h1 style="transform: translateY(-100px); transition: ease-in-out 1s;">Password Generator</h1>
+    <form action="{% url 'password' %}" method="GET">
+        <p class="count" style="transform: translateY(-100px); transition: ease-in-out 1.3s "> <select class="menu_len" name="length">
+            {% for i in lst %}
+            {% if i == 12 %}
+            <option value="{{ i }}" selected>{{ i }}</option>
+            {% else %}
+            <option value="{{ i }}">{{ i }}</option>
+            {% endif %}
+            {% endfor %}
+        </select> -Character Count</p>
+        <p class="check_c" style="transform: translateY(-100px); transition: ease-in-out 1.5s;">
+            <input type="checkbox" name="uppercase">-Uppercase <br>
+            <input type="checkbox" name="numbers">-Numbers <br>
+            <input type="checkbox" name="special">-Special <br>
+        </p>
+
+        <input class="gen_submit" type="submit" value="Generate Password">
+         <p> <a class="info-url" href="{% url 'info' %}">Password generator information </a></p>
+    </form>
+{% endblock %}
