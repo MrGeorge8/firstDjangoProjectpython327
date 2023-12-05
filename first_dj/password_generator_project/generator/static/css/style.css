@@ -1,11 +1,10 @@
 body{
-    background: rgba(0, 0, 0, 0.76);
     font-family: Georgia sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    margin: 0;
+    min-height:100vh;
+    margin: 0 auto;
 }
 
 .container{
@@ -15,59 +14,63 @@ body{
 
 h1{
     text-align: center;
-    color: rgb(162, 162, 162);
-    background: rgba(0, 0, 0, 0.4);
+    color: rgb(206, 205, 205);
+    background: rgba(80, 80, 231, 0.16);
     padding: 20px;
     border-radius: 8px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgb(112, 3, 245);
 }
 
 .container form, .container h2{
-    background: rgba(0, 0, 0, 0.4);
-    color: rgba(1, 204, 12, 0.79);
+    background: rgba(80, 80, 231, 0.16);
+    color: rgba(5, 252, 18, 0.99);
     padding: 20px;
     box-sizing: border-box;
     border-radius: 11px;
     font-size: 1.3rem;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px solid rgb(111, 13, 231);
 
+}
+
+.container h2{
+    background-color: rgba(52, 52, 52, 0.98);
 }
 
 .gen_submit{
     font-size: 1rem;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #a2a2a2;
+    background: rgba(80, 80, 231, 0.16);
+    color: #cbc9c9;
     border-radius: 8px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgb(111, 13, 231);
     transition: background-color ease-in-out 0.4s;
 }
 
 .gen_submit:hover{
- background-color: rgba(13, 231, 174, 0.58);
+    background-color: rgba(13, 231, 174, 0.71);
 
 }
 
 .menu_len{
     font-size: 1rem;
-    border: 1px solid rgba(13, 231, 174, 0.85);
-    background-color: rgb(28, 28, 28);
+    border: 1px solid rgb(111, 13, 231);
+    background-color: rgba(80, 80, 231, 0.16);
     color: #ffffff;
 }
 
 .count{
-    color: rgba(1, 204, 12, 0.79);
-    border: 3px solid rgba(111, 13, 231, 0.35);
-    background-color: rgb(28, 28, 28);
+    color: rgb(4, 248, 17);
+    border: 3px outset rgb(111, 13, 231);
+    background-color: rgba(52, 52, 52, 0.98);
     border-radius: 11px;
     padding: 5px;
     letter-spacing: 2px;
 }
 
 .check_c{
-    color: rgba(1, 204, 12, 0.79);
-    background-color: rgb(28, 28, 28);
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    color: rgba(5, 248, 18, 0.96);
+    background-color: rgba(52, 52, 52, 0.98);
+    border: 3px outset rgb(111, 13, 231);
     letter-spacing: 1px;
     padding: 11px;
     border-radius: 11px;
@@ -81,43 +84,43 @@ h1{
 .home_page{
     text-decoration: none;
     font-size: 1.4rem;
-    color: #c5c4c4;
-    background-color: rgba(0, 0, 0, 0.35);
+    color: #c4c2c2;
+    background-color: rgba(16, 16, 17, 0.16);
     padding: 5px;
     border-radius: 8px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgba(111, 13, 231, 0.89);
     transition: background-color ease-in-out 0.4s;
     margin: 100px;
 }
 
 .home_page:hover{
-    background-color: rgba(13, 231, 174, 0.68);
+    background-color: rgba(13, 231, 174, 0.8);
 }
 
 .info-url {
-    color: rgba(238, 165, 120, 0.58);
-    background: rgba(0, 0, 0, 0.44);
+    color: rgba(238, 218, 120, 0.97);
+    background: rgba(80, 80, 231, 0.16);
     padding: 3px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgb(111, 13, 231);
     margin: 37px;
     border-radius: 8px;
 
 }
 
 .info-page{
-    color: #a2a2a2;
-    border: 3px solid rgba(111, 13, 231, 0.35);
-    background-color: rgba(0, 0, 0, 0.34);
+    color: #b9b8b8;
+    border: 3px outset rgb(111, 13, 231);
+    background-color: rgba(28, 27, 27, 0.98);
     border-radius: 8px;
     font-size: 1.1em;
 }
 
 h3{
-    color: rgb(162, 162, 162);
-    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(208, 206, 206);
+    background-color: rgba(80, 80, 231, 0.24);
     padding: 5px;
     border-radius: 8px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgba(111, 13, 231, 0.98);
 }
 
 span{
@@ -127,12 +130,26 @@ span{
 
 .back-main{
     text-decoration: none;
-    font-size: 1em;
-    color: rgba(238, 165, 120, 0.58);
-    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 1.3em;
+    color: rgba(250, 207, 182, 0.88);
+    background-color: rgba(80, 80, 231, 0.16);
     padding: 5px;
     border-radius: 8px;
-    border: 3px solid rgba(111, 13, 231, 0.35);
+    border: 3px outset rgb(111, 13, 231);
     transition: background-color ease-in-out 0.4s;
-    margin: 80px;
+    margin: 140px;
 }
+
+.moon{
+    position: absolute;
+    left: -3%;
+    top: -17%;
+    width: 36%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+

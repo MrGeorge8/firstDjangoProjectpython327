@@ -5,10 +5,21 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+    body {
+    background-image: url('{% static "images/retrowave.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    </style>
 </head>
 <body>
 <div class="container">
-    {% block content %} {% endblock %}
+    {% block content %}
+    
+    {% endblock %}
 </div>
 </body>
 </html>
